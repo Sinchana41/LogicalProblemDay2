@@ -3,33 +3,33 @@ package com.logicalproblems;
 public class MissingNumberInAP {
 
 	public static void main(String[] args) {
-		int[] ar= {2,6,8,10,12,14};
-		int missedNumber=missingNumberInAP(ar);
+		int[] array= {2,6,8,10,12,14};
+		int missedNumber=missingNumberInAP(array);
 		System.out.println(missedNumber);
 	}
 
-	private static int missingNumberInAP(int[] ar) {
+	private static int missingNumberInAP(int[] array) {
 		int min=Integer.MAX_VALUE;
 		int max=Integer.MIN_VALUE;
 		int sum=0;
-		
-		
-		for (int i = 0; i < ar.length; i++) {
-			
-			if(ar[i]<min) {
-				min=ar[i];
+
+
+		for (int i = 0; i < array.length; i++) {
+
+			if(array[i]<min) {
+				min=array[i];
 			}
-			if(ar[i]>max) {
-				max=ar[i];
+			if(array[i]>max) {
+				max=array[i];
 			}
-			
-			sum=sum+ar[i];
-			
+
+			sum=sum+array[i];
+
 		}
-		int n=ar.length+1;//if one numbwe is not missing
+		int n=array.length+1;//if one number is not missing
 		int expectedSum=n*(max+min)/2;
-		
+
 		return expectedSum-sum;
 	}
-	
+
 }
