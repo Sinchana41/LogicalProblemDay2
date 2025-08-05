@@ -2,8 +2,8 @@ package com.oops.employeesalarycalculation;
 
 abstract class Employee {
 
-	    String name;
-	    int id;
+	 private  String name;
+	 private  int id;
 
 	    public Employee(String name, int id) {
 	        this.name = name;
@@ -15,6 +15,6 @@ abstract class Employee {
 	    public void display() {
 	        System.out.println("Name: " + name);
 	        System.out.println("ID: " + id);
-	        System.out.println("Salary: " + calculateSalary());      
+	        System.out.println("Salary: "+ calculateSalary());      
 	    }
 }

@@ -2,7 +2,7 @@ package com.oops.employeesalarycalculation;
 
 public class Contractor extends Employee{
 
-	    double contractAmount;
+	    private double contractAmount;
 
 	    public Contractor(String name, int id, double contractAmount) {
 	        super(name, id);

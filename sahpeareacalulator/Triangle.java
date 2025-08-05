@@ -1,7 +1,7 @@
 package com.oops.sahpeareacalulator;
 
 public class Triangle extends Shape {
-    double base, height;
+   private double base, height;
 
     Triangle(double base, double height) {
         super("Triangle");

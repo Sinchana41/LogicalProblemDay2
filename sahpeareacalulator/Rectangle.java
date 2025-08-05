@@ -1,7 +1,7 @@
 package com.oops.sahpeareacalulator;
 
 public class Rectangle extends Shape {
-    double length, width;
+   private double length, width;
 
     Rectangle(double length, double width) {
         super("Rectangle");

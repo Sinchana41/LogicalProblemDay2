@@ -2,11 +2,27 @@ package com.oops.studentgradesystem;
 
 public class Subject {
 
-	String name;
-    int marks;
+	private String name;
+	private int marks;
 
     Subject(String name, int marks) {
-        this.name = name;
-        this.marks = marks;
+        this.setName(name);
+        this.setMarks(marks);
     }
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getMarks() {
+		return marks;
+	}
+
+	public void setMarks(int marks) {
+		this.marks = marks;
+	}
 }

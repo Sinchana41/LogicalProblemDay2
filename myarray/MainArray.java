@@ -4,15 +4,15 @@ import java.util.Arrays;
 
 public class MainArray {
 
-	 public static void main(String[] args) {
-	        MyArray arr = new MyArray();
+	public static void main(String[] args) {
+		MyArray array = new MyArray();
 
-	        arr.add(10);
-	        arr.add(20);
-	        arr.add(30); 
+		array.add(10);
+		array.add(20);
+		array.add(30); 
 
-	        arr.printAll();
-	        System.out.println("Element at index 1: " + arr.get(1)); 
-	        System.out.println("Size: " + arr.size()); 
-	    }
+		array.printAll();
+		System.out.println("Element at index 1: " + array.get(1)); 
+		System.out.println("Size: " + array.size()); 
+	}
 }

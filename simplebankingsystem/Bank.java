@@ -21,7 +21,7 @@ public class Bank {
 
 	    public Account getAccountByNumber(int accNo) {
 	        for (int i = 0; i < accCount; i++) {
-	            if (accounts[i].accountNumber == accNo) return accounts[i];
+	            if (accounts[i].getAccountNumber() == accNo) return accounts[i];
 	        }
 	        return null;
 	    }
